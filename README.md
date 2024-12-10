@@ -1,7 +1,7 @@
 # RAG Application :rocket:
 
 ## Table of Contents :bookmark_tabs:
-1. [Overview :book:](#overview-rocket)
+1. [Overview :book:](#overview-book)
 2. [Features :sparkles:](#features-sparkles)
 3. [Setup :wrench:](#setup-wrench)
     - [Prerequisites :memo:](#prerequisites-memo)
