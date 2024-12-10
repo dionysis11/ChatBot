@@ -1,43 +1,45 @@
-# RAG PDF Chatbot Application
+# RAG PDF Chatbot Application :robot: :page_facing_up:
 
-## Table of Contents 📑
-- [Overview](#overview)
-- [Features](#features)
-- [Setup](#setup)
+## Table of Contents :bookmark_tabs:
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Setup](#setup)
     - [Prerequisites](#prerequisites)
     - [Environment Variables](#environment-variables)
     - [Vector Search Index](#vector-search-index)
     - [Build and Run](#build-and-run)
-- [API Endpoints](#api-endpoints)
+4. [API Endpoints](#api-endpoints)
     - [Chat Request](#chat-request)
     - [Chat Stream](#chat-stream)
     - [Load Documents](#load-documents)
     - [Clear Data](#clear-data)
-- [Error Handling](#error-handling)
-- [Logging](#logging)
-- [Contributing](#contributing)
-- [License](#license)
+5. [Error Handling](#error-handling)
+6. [Logging](#logging)
+7. [Contributing](#contributing)
+8. [License](#license)
 
-## Overview
+## Overview :rocket:
 
-Welcome to the RAG PDF Chatbot Application! Imagine having a smart assistant that knows everything inside your PDFs and can chat with you about it. Whether you're exploring a complex manual, diving into research papers, or just curious about a document, this app brings your PDFs to life. It's all done in a secure, isolated environment, so your data stays private and safe.
+Welcome to the **RAG PDF Chatbot Application**! Imagine having a smart assistant that knows everything inside your PDFs and can chat with you about it. Whether you're exploring a complex manual, diving into research papers, or just curious about a document, this app brings your PDFs to life. It's all done in a secure, isolated environment, so your data stays private and safe.
 
-## Features
+## Features :sparkles:
 
 - **Chat with Your PDFs**: Have a question about what's in your PDFs? Just ask! Our chatbot is here to provide answers based on the content of your documents.
 - **Live Response Streaming**: Get instant answers as you chat. It's like having a conversation with your documents in real-time!
 - **Easy Document Loading**: Add your PDF files effortlessly—whether from a default folder or any URL. It’s a breeze to get your content into the chat.
 - **Clear Your Data**: Need a fresh start? Clear out all your old documents with a single click and start with a clean slate.
 
-## Setup
+## Setup :wrench:
 
-### Prerequisites
+### Prerequisites :memo:
 
-- Java 17 or higher
-- Maven or Gradle
-- MongoDB (for storing and managing documents)
+Make sure you have the following installed:
 
-### Environment Variables
+- **Java 17 or higher** :coffee:
+- **Maven or Gradle** :hammer:
+- **MongoDB** (for storing and managing documents) :file_cabinet:
+
+### Environment Variables :earth_americas:
 
 Ensure the following environment variables are set:
 
@@ -48,11 +50,11 @@ Ensure the following environment variables are set:
 - `OPENAI_KEY`: Your OpenAI API key for chat model access.
 - `CONNECTION_STRING`: MongoDB connection URI.
 
-### Vector Search Index
+### Vector Search Index :mag_right:
 
 To run the application, you must create a vector search index for the MongoDB collection. Follow the instructions provided in the [Spring AI Documentation](https://docs.spring.io/spring-ai/reference/api/vectordbs/mongodb.html) to set up the index.
 
-### Build and Run
+### Build and Run :rocket:
 
 1. **Clone the repository**:
     ```bash
@@ -62,9 +64,9 @@ To run the application, you must create a vector search index for the MongoDB co
 
 2. **Add PDF files** (optional):
     - If you want to load your own PDF files during initialization, place them in the `src/main/resources/docs` folder before running it.
-    - 
-> [!IMPORTANT]  
-> The application will automatically load these PDFs when it starts and will delete them from this folder after the load for security reasons.
+
+    > **IMPORTANT**  
+    > The application will automatically load these PDFs when it starts and will delete them from this folder after the load for security reasons.
 
 3. **Build the application**:
     ```bash
@@ -76,9 +78,9 @@ To run the application, you must create a vector search index for the MongoDB co
     ./mvnw spring-boot:run
     ```
 
-## API Endpoints
+## API Endpoints :globe_with_meridians:
 
-### Chat Request
+### Chat Request :speech_balloon:
 
 - **Endpoint**: `/chat`
 - **Method**: `GET`
@@ -89,7 +91,7 @@ To run the application, you must create a vector search index for the MongoDB co
     GET http://localhost:8080/chat?query=What is the phone number of a person in the PDFs?
     ```
 
-### Chat Stream
+### Chat Stream :ocean:
 
 - **Endpoint**: `/chat/stream`
 - **Method**: `GET`
@@ -101,7 +103,7 @@ To run the application, you must create a vector search index for the MongoDB co
     GET http://localhost:8080/chat/stream?query=What is the phone number of a person in the PDFs?
     ```
 
-### Load Documents
+### Load Documents :page_with_curl:
 
 - **Endpoint**: `/load`
 - **Method**: `POST`
@@ -116,7 +118,7 @@ To run the application, you must create a vector search index for the MongoDB co
     POST http://localhost:8080/load
     ```
 
-### Clear Data
+### Clear Data :broom:
 
 - **Endpoint**: `/clear`
 - **Method**: `POST`
@@ -126,19 +128,19 @@ To run the application, you must create a vector search index for the MongoDB co
     POST http://localhost:8080/clear
     ```
 
-## Error Handling
+## Error Handling :warning:
 
 - **Malformed URL**: Returns a `400 Bad Request` response with an error message if a malformed URL is provided during the load operation.
 - **General Errors**: Logs errors and provides appropriate status codes in response.
 
-## Logging
+## Logging :scroll:
 
 The application uses SLF4J with `logback` for logging. Key events are logged at `INFO` and `DEBUG` levels to provide insights into the application's operations.
 
-## Contributing
+## Contributing :handshake:
 
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
-## License
+## License :memo:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
