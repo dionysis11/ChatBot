@@ -1,22 +1,22 @@
 # RAG PDF Chatbot Application
 
 ## Table of Contents 📑
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Setup](#setup)
+- [Overview](#overview)
+- [Features](#features)
+- [Setup](#setup)
     - [Prerequisites](#prerequisites)
     - [Environment Variables](#environment-variables)
     - [Vector Search Index](#vector-search-index)
     - [Build and Run](#build-and-run)
-4. [API Endpoints](#api-endpoints)
+- [API Endpoints](#api-endpoints)
     - [Chat Request](#chat-request)
     - [Chat Stream](#chat-stream)
     - [Load Documents](#load-documents)
     - [Clear Data](#clear-data)
-5. [Error Handling](#error-handling)
-6. [Logging](#logging)
-7. [Contributing](#contributing)
-8. [License](#license)
+- [Error Handling](#error-handling)
+- [Logging](#logging)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Overview
 
