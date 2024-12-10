@@ -1,5 +1,23 @@
 # RAG PDF Chatbot Application
 
+## Table of Contents 📑
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Setup](#setup)
+    - [Prerequisites](#prerequisites)
+    - [Environment Variables](#environment-variables)
+    - [Vector Search Index](#vector-search-index)
+    - [Build and Run](#build-and-run)
+4. [API Endpoints](#api-endpoints)
+    - [Chat Request](#chat-request)
+    - [Chat Stream](#chat-stream)
+    - [Load Documents](#load-documents)
+    - [Clear Data](#clear-data)
+5. [Error Handling](#error-handling)
+6. [Logging](#logging)
+7. [Contributing](#contributing)
+8. [License](#license)
+
 ## Overview
 
 Welcome to the RAG PDF Chatbot Application! Imagine having a smart assistant that knows everything inside your PDFs and can chat with you about it. Whether you're exploring a complex manual, diving into research papers, or just curious about a document, this app brings your PDFs to life. It's all done in a secure, isolated environment, so your data stays private and safe.
