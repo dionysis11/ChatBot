@@ -1,0 +1,94 @@
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    height: 97vh;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    box-shadow: black 0px 0px 5px;
+    position: relative; /* For absolute positioning of the header if needed */
+}
+
+.chat-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px; /* Original padding */
+    border-bottom: 1px solid #fb7b7b
+}
+
+.chat-header img {
+    max-width: 100px; /* Original max width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.pt-site-footer__submit{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.input-container {
+    max-width: 90%;
+    position: relative;
+    bottom: -9px;
+    left: 52px;
+}
+
+
+input[type="text"] {
+    flex: 1;
+    padding: 19px;
+    margin-right: 20px;
+    width: 97%;
+    height: 20px;
+}
+
+input[type="text"]:focus{
+    color: inherit; /* Maintain the same text color */
+    border-color: #ccc; /* Maintain the same border color */
+    outline: none; /* Optionally remove the outline */
+}
+
+button.send-button {
+    padding: 10px;
+    margin-right: 3.5px;
+    border: none;
+    border-radius: 20px;
+    background-color: #DC143C; /* red */
+    color: white;
+    cursor: pointer;
+    transform: rotate(-90deg); /* Rotate arrow to point upwards */
+    transition: box-shadow 0.3s ease;
+    position: absolute;
+    right:-1px;
+    top: 3px;
+}
+
+button.send-button:hover {
+    background-color: #d91439; /* Darker red */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.text-under {
+    color: #a9a7a7;
+    text-align: center;
+    padding: 6px;
+    padding-right: 48px;
+    font-family: Bahnschrift;
+    font-size: 11px;
+}
+
+
+
