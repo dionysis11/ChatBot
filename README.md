@@ -1,5 +1,7 @@
+# RAG Application :rocket:
+
 ## Table of Contents :bookmark_tabs:
-1. [Overview :rocket:](#overview-rocket)
+1. [Overview :book:](#overview-rocket)
 2. [Features :sparkles:](#features-sparkles)
 3. [Setup :wrench:](#setup-wrench)
     - [Prerequisites :memo:](#prerequisites-memo)
@@ -16,7 +18,7 @@
 7. [Contributing :handshake:](#contributing-handshake)
 8. [License :balance_scale:](#license-balance_scale)
 
-## Overview :rocket:
+## Overview :book:
 
 Welcome to the **RAG PDF Chatbot Application**! Imagine having a smart assistant that knows everything inside your PDFs and can chat with you about it. Whether you're exploring a complex manual, diving into research papers, or just curious about a document, this app brings your PDFs to life. It's all done in a secure, isolated environment, so your data stays private and safe.
 
@@ -141,4 +143,4 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 ## License :balance_scale:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project does not have a license yet. Please feel free to contribute, but note that any contributions will need to be discussed with the project maintainers before licensing terms are decided.
