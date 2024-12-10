@@ -1,0 +1,88 @@
+/* Main chat container */
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 97vh;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+.message-wrapper {
+    display: flex;
+    margin-bottom: 10px; /* Space between messages */
+}
+
+/* Container for bot avatar */
+.avatar-container {
+    margin-right: 10px; /* Space between avatar and message box */
+    margin-top: 7px;
+}
+
+.avatar {
+    width: 25px; /* Size of the avatar */
+    height: 25px;
+    border-radius: 50%; /* Makes the avatar circular */
+}
+
+/* General message styles */
+.message {
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+    word-wrap: break-word; /* Ensures long text wraps */
+    display: flex;
+    align-items: center;
+    position: relative; /* Necessary for the pseudo-element to position properly */
+}
+
+/* User message styles */
+.user-message {
+    background-color: #DC143C;
+    color: white;
+    align-self: flex-end; /* Aligns user messages to the right */
+    text-align: left;
+    margin-left: auto; /* Pushes the message to the right */
+    margin-right:10px;
+}
+
+/* Bot message styles with custom speech bubble */
+.bot-message {
+    background-color: #e5e5ea;
+    color: black;
+    align-self: flex-start; /* Aligns bot messages to the left */
+    text-align: left; /* Aligns text to the left */
+    display: flex;
+    align-items: center;
+    position: relative; /* Position relative for the triangle */
+    padding-left: 15px; /* Extra padding to make room for the triangle */
+}
+
+.bot-message::before {
+    content: "";
+    position: absolute;
+    top: 10px; /* Adjusts the vertical position of the triangle */
+    left: -7px; /* Adjusts the horizontal position to be outside the box */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0; /* Triangle pointing left */
+    border-color: transparent #e5e5ea transparent transparent; /* Triangle color matches the box */
+}
+
+.user-message::after {
+    content: "";
+    position: absolute;
+    top: 10px; /* Adjusts the vertical position of the triangle */
+    right: -7px; /* Adjusts the horizontal position to be outside the box */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px; /* Triangle pointing right */
+    border-color: transparent transparent transparent #DC143C; /* Triangle color matches the box */
+}
