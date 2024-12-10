@@ -1,5 +1,3 @@
-# RAG PDF Chatbot Application :robot: :page_facing_up:
-
 ## Table of Contents :bookmark_tabs:
 1. [Overview :rocket:](#overview-rocket)
 2. [Features :sparkles:](#features-sparkles)
@@ -36,10 +34,10 @@ Welcome to the **RAG PDF Chatbot Application**! Imagine having a smart assistant
 Make sure you have the following installed:
 
 - **Java 17 or higher** :coffee:
-- **Maven or Gradle** :hammer:
-- **MongoDB** (for storing and managing documents) :file_cabinet:
+- **Maven or Gradle** :construction_worker:
+- **MongoDB** :database:
 
-### Environment Variables :earth_americas:
+### Environment Variables :key:
 
 Ensure the following environment variables are set:
 
@@ -50,11 +48,11 @@ Ensure the following environment variables are set:
 - `OPENAI_KEY`: Your OpenAI API key for chat model access.
 - `CONNECTION_STRING`: MongoDB connection URI.
 
-### Vector Search Index :mag_right:
+### Vector Search Index :mag:
 
 To run the application, you must create a vector search index for the MongoDB collection. Follow the instructions provided in the [Spring AI Documentation](https://docs.spring.io/spring-ai/reference/api/vectordbs/mongodb.html) to set up the index.
 
-### Build and Run :rocket:
+### Build and Run :hammer_and_wrench:
 
 1. **Clone the repository**:
     ```bash
@@ -64,9 +62,9 @@ To run the application, you must create a vector search index for the MongoDB co
 
 2. **Add PDF files** (optional):
     - If you want to load your own PDF files during initialization, place them in the `src/main/resources/docs` folder before running it.
-
-    > **IMPORTANT**  
-    > The application will automatically load these PDFs when it starts and will delete them from this folder after the load for security reasons.
+    - 
+> [!IMPORTANT]  
+> The application will automatically load these PDFs when it starts and will delete them from this folder after the load for security reasons.
 
 3. **Build the application**:
     ```bash
@@ -78,7 +76,7 @@ To run the application, you must create a vector search index for the MongoDB co
     ./mvnw spring-boot:run
     ```
 
-## API Endpoints :globe_with_meridians:
+## API Endpoints :satellite:
 
 ### Chat Request :speech_balloon:
 
@@ -91,7 +89,7 @@ To run the application, you must create a vector search index for the MongoDB co
     GET http://localhost:8080/chat?query=What is the phone number of a person in the PDFs?
     ```
 
-### Chat Stream :ocean:
+### Chat Stream :loud_sound:
 
 - **Endpoint**: `/chat/stream`
 - **Method**: `GET`
@@ -103,7 +101,7 @@ To run the application, you must create a vector search index for the MongoDB co
     GET http://localhost:8080/chat/stream?query=What is the phone number of a person in the PDFs?
     ```
 
-### Load Documents :page_with_curl:
+### Load Documents :file_folder:
 
 - **Endpoint**: `/load`
 - **Method**: `POST`
@@ -133,7 +131,7 @@ To run the application, you must create a vector search index for the MongoDB co
 - **Malformed URL**: Returns a `400 Bad Request` response with an error message if a malformed URL is provided during the load operation.
 - **General Errors**: Logs errors and provides appropriate status codes in response.
 
-## Logging :scroll:
+## Logging :memo:
 
 The application uses SLF4J with `logback` for logging. Key events are logged at `INFO` and `DEBUG` levels to provide insights into the application's operations.
 
@@ -141,6 +139,6 @@ The application uses SLF4J with `logback` for logging. Key events are logged at 
 
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
-## License :memo:
+## License :balance_scale:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
