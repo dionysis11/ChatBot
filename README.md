@@ -1,22 +1,22 @@
 # RAG PDF Chatbot Application :robot: :page_facing_up:
 
 ## Table of Contents :bookmark_tabs:
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Setup](#setup)
-    - [Prerequisites](#prerequisites)
-    - [Environment Variables](#environment-variables)
-    - [Vector Search Index](#vector-search-index)
-    - [Build and Run](#build-and-run)
-4. [API Endpoints](#api-endpoints)
-    - [Chat Request](#chat-request)
-    - [Chat Stream](#chat-stream)
-    - [Load Documents](#load-documents)
-    - [Clear Data](#clear-data)
-5. [Error Handling](#error-handling)
-6. [Logging](#logging)
-7. [Contributing](#contributing)
-8. [License](#license)
+1. [Overview :rocket:](#overview-rocket)
+2. [Features :sparkles:](#features-sparkles)
+3. [Setup :wrench:](#setup-wrench)
+    - [Prerequisites :memo:](#prerequisites-memo)
+    - [Environment Variables :key:](#environment-variables-key)
+    - [Vector Search Index :mag:](#vector-search-index-mag)
+    - [Build and Run :hammer_and_wrench:](#build-and-run-hammer_and_wrench)
+4. [API Endpoints :satellite:](#api-endpoints-satellite)
+    - [Chat Request :speech_balloon:](#chat-request-speech_balloon)
+    - [Chat Stream :loud_sound:](#chat-stream-loud_sound)
+    - [Load Documents :file_folder:](#load-documents-file_folder)
+    - [Clear Data :broom:](#clear-data-broom)
+5. [Error Handling :warning:](#error-handling-warning)
+6. [Logging :memo:](#logging-memo)
+7. [Contributing :handshake:](#contributing-handshake)
+8. [License :balance_scale:](#license-balance_scale)
 
 ## Overview :rocket:
 
